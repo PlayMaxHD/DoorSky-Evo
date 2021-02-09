@@ -15,7 +15,7 @@ app.listen(3000, () => {
 const bot = new dbd.Bot({
 	sharding: true,
 	shardAmount: 2,
-	token: process.env.TOKEN,
+	token: "Nzk1NDgzNDA2NDI2MTc3NTQ3.X_KBpw.kMDGJH1I3M8euwDmtzYy2Sh2zhY",
 	prefix: [
 		'$getServerVar[prefix]',
 		'<@795483406426177547>',
