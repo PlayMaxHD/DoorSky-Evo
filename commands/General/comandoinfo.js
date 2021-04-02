@@ -7,21 +7,22 @@ note: "debes escribir el nombre exacto del comando si no, no funcionara",
 code: `$color[GREEN]
 $title[$replaceText[$replaceText[$getServerVar[language];Español;Información Comandos];Inglés;Information Commands]]
 $description[$replaceText[$replaceText[$getServerVar[language];Español;
+**Descripción:**
+$commandInfo[$message;description]
 
-$addField[Nota;$commandInfo[$message;note]]
+**Uso Correcto:**
+$commandInfo[$message;usage]
 
-$addField[Uso Correcto;$commandInfo[$message;usage]]
+**Nota:**
+$commandInfo[$message;note]];Inglés;
+**Descriptión:**
+$replaceText[$replaceText[$replaceText[$jsonRequest[https://api.playmax.repl.co/api/traducir?to=En?text=$replaceText[$replaceText[$replaceText[$replaceText[$commandInfo[$message;description];%;];C3;];A1;]; ;%20];res];%;];C3;];A1;]
 
+**Correct usage:**
+$commandInfo[$message;usage]
 
-$addField[Descripción;$commandInfo[$message;description]]];Inglés;
-
-$addField[Note;$commandInfo[$message;note]]
-
-$addField[Correct Usage;$commandInfo[$message;usage]]
-
-
-$addField[Description;$commandInfo[$message;description]]]
-]
+**Note:**
+$replaceText[$replaceText[$replaceText[$jsonRequest[https://api.playmax.repl.co/api/traducir?to=en?text=$replaceText[$replaceText[$replaceText[$replaceText[$commandInfo[$message;note];%;];C3;];A1;]; ;%20];res];%;];A1;];C3;]]]
 $replaceText[$replaceText[$getServerVar[language];Español;$argsCheck[>1;{color:RED}{title:Error :x:}{description:Debes proporcionar el nombre del comando 
   
   **USO CORRECTO:**

@@ -1,5 +1,5 @@
 module.exports = ({
-name: "$alwaysExecute",
+name: "kkalwaysExecute",
 code: `$deletecommand
 $onlyIf[$getUserVar[mute]==;]`
 })

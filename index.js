@@ -9,13 +9,13 @@ app.get('/', (req, res) => {
 });
 
 app.listen(3000, () => {
-	console.log('server started');
+	console.log('Estoy Listo');
 });
 
 const bot = new dbd.Bot({
 	sharding: true,
 	shardAmount: 2,
-	token: "Nzk1NDgzNDA2NDI2MTc3NTQ3.X_KBpw.kMDGJH1I3M8euwDmtzYy2Sh2zhY",
+	token: "Nzk1NDgzNDA2NDI2MTc3NTQ3.X_KBpw.o08sVbQiOpsyP_oGX2UjTMQzXns",
 	prefix: [
 		'$getServerVar[prefix]',
 		'<@795483406426177547>',
@@ -25,6 +25,31 @@ const bot = new dbd.Bot({
 });
 
 //aca empiezan los estados
+bot.status({
+  text: "$allMembersCount Miembros 😻",
+  type: "WATCHING",
+  time: 9
+})
+
+bot.status({
+  text: "$serverCount Servidores 😲",
+  type: "WATCHING",
+  time: 9
+})
+
+bot.status({
+  text: "$commandsCount Comandós!! ⭐",
+  type: "WATCHING",
+  time: 9
+})
+
+/*
+PLAYING - Jugando
+WATCHING - Viendo 
+LISTENING - Escuchando
+STREAMING - Transmitiendo
+COMPETING - Compitiendo
+*/
 
 //aca empiezan las variables
 bot.variables({
@@ -46,6 +71,7 @@ bot.variables({
 	language: "Inglés",
 	pene: "undefine",
 	wchannel: "018281",
+	wmessage: "Test",
 	ticketMessage: "01372937",
 	ticketChannel: "927382827",
 	ticketCategory: "9282829273"
@@ -54,6 +80,25 @@ bot.variables({
 //aca empiezan los awaited
 bot.onMessage();
 
+bot.awaitedCommand({
+	name: 'asalto',
+	code: ` Asaltado test
+`
+});
+
+bot.awaitedCommand({
+	name: 'hack',
+	code: `
+hackeado test
+`
+});
+
+bot.awaitedCommand({
+	name: 'mafia',
+	code: `
+mafia test
+`
+});
 
 bot.awaitedCommand({
 	name: 'massivepurge',
@@ -62,6 +107,9 @@ $clear[100]
 `
 });
 
+bot.loadCommands('./commands/informacion');
+bot.loadCommands('./commands/economia');
+bot.loadCommands('./commands/moderacion');
 bot.loadCommands('./commands/General');
 bot.loadCommands('./commands/interaccion');
 //aca empiezan los eventos
@@ -83,6 +131,13 @@ bot.interactionCommand({
 });
 bot.onInteractionCreate();
 
+bot.interactionCommand({
+name: "help", 
+code: `te`
+})
+bot.onInteractionCreate()
+
+
 bot.reactionRemoveCommand({
 	channel: '$getServerVar[logs]',
 	code: `$title[Reaccion removida]
@@ -94,11 +149,7 @@ $color[RED]
 $footer[$day/$month/$year]`
 });
 
-bot.musicStartCommand({
-	channel: '$channelID',
-	code: `Reproduciendo $songInfo[title]`
-});
-bot.onMusicStart();
+
 
 bot.deletedCommand({
 	channel: "$getServerVar[logs]",
@@ -268,8 +319,7 @@ bot.joinCommand({
 	channel: '$getServerVar[wchannel]',
 	code: `$title[Nuevo Miembro!!]
 $description[Bienvenido $username espero la pases genial aca!! :D y no olvides leer las reglas!!]
-$image[https://api.xzusfin.repl.co/card?avatar=$replaceText[$authorAvatar;.
-webp;.png;1]?size=2048&middle=Bienvenido!!&name=$replaceText[$replaceText[$username[$authorID]#$discriminator[$authorID];#;%23;-1]; ;%20;-1]&bottom=$replaceText[Ahora somos $membersCount Miembros; ;%20;-1]&background=https://cdn.discordapp.com/attachments/789656208276848682/798106281189572645/default11.png&text=%23ffffff&avatarborder=%23FFFFFF&avatarbg=%23FF28b3]
+$image[https://cdn.discordapp.com/attachments/780553507752378378/817138590038360124/Welcome_x_DoorSky-1.jpg]
 $color[RANDOM]`
 });
 bot.onJoined();

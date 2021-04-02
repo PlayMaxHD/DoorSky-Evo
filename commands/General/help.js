@@ -16,13 +16,13 @@ set-welcome | set-suggest | set-leave | set-msg-leave | set-confession | set-log
 work | daily | bal | remove-money | add-money | gift | crime | rob
 
 **Diversión:**
-meme | rps | chiste | verdad-o-reto | among | 8ball | trump | waifu | say 
+meme | rps | chiste | truthdare | among | 8ball | trump | waifu | say 
 
 **Información:**
 botinfo | serverinfo | covid | today | horoscopo | donate | support | cmdinfo | help | ping | profile | uptime | web | avatar | jumbo | vote | invite 
 
 **Animales:**
-gato | perro | panda | fox 
+cat | dog | pand | fox 
 
 **Reacción & Interacción:**
 love | trash | baka | bite | claps | cook | dance | hug | kill | kiss | punch | run | sleep | angry | boom | confused | cry | dab | fbi | game | happy | shrug | sip | vomit | wanted
@@ -31,7 +31,7 @@ love | trash | baka | bite | claps | cook | dance | hug | kill | kiss | punch | 
 queue | play | reproduciendo |
 
 **Otros:**
-traducir | calc | youtube | wiki
+translate | calc | youtube | wiki
 
 ];Inglés;Hi this is my help list, and my prefix is $getServerVar[prefix]
 
@@ -45,13 +45,13 @@ set-welcome | set-suggest | set-leave | set-msg-leave | set-confession | set-log
 work | daily | bal | remove-money | add-money | gift | crime | rob
 
 **Fun:**
-meme | rps | chiste | verdad-o-reto | among | 8ball | trump | waifu | say 
+meme | rps | chiste | truthdare | among | 8ball | trump | waifu | say 
 
 **Informatión:**
 botinfo | serverinfo | covid | today | horoscopo | donate | support | cmdinfo | help | ping | profile | uptime | web | avatar | jumbo | vote | invite 
 
 **Animals:**
-gato | perro | panda | fox 
+cat | dog | pand | fox 
 
 **Reactions & Interactións:**
 love | trash | baka | bite | claps | cook | dance | hug | kill | kiss | punch | run | sleep | angry | boom | confused | cry | dab | fbi | game | happy | shrug | sip | vomit | wanted
@@ -66,6 +66,6 @@ traducir | calc | youtube | wiki
 $color[06FF00]
 $footer[$username#$discriminator;$authorAvatar]
 $thumbnail[$userAvatar[$clientID]]
-$onlyForIDs[717901806050738177;:x: no disponible aun]
+$onlyForIDs[814010071939416074;717901806050738177;:x: no disponible aun]
 `
 })
