@@ -1,45 +1,36 @@
 module.exports = ({
 name: "serverinfo",
-description: "te da la información de el servidor",
+description: "Ve la información del servidor",
 usage: "dr!serverinfo",
-note: "es recomendable que tenga todos los permisos el bot para que funcione correctamente",
-code: `$title[Informacion Servidor]
+note: "te da casi toda la info",
+code: `$title[Informe Del Servidor]
 $description[
-Logo del servidor ==> 
+Logo Del Servidor: ==> 
 
-Nombre del servidor:
-$serverName
+Información General
+Nombre: $serverName
+Region: $serverRegion
+Sistema de Seguridad: $serverVerificationLevel
+Boosteos: $serverBoostCount boost (Nivel $servervBoostLevel)
+Emojis: $emojiCount
 
-Dueño:
-<@$ownerID>
 
-Región:
-$serverRegion
+Información de Canales:
+Texto: $channelCount[text]
+Voz: $channelCount[voice]
+Anuncio: none
+Casaclub: None
 
-Nivel de seguridad:
-$serverVerificationLevel
 
-Cantidad de Boost
-$ServerBoostCount (Nivel $serverBoostLevel)
-
-Miembros:
-$membersCount[$guildID;all;false]
-
-Robots:
-$botCont
-
-Emojis:
-$emojiCount
-
-Roles:
-$roleCount
-
-Canales De Texto:
-$channelCount[text]
-
-Camales De Voz:
-$channelCount[voice]
+Información de Miembros:
+Miembros: $membersCount
+Online: $membersCount[$guildID;online]
+Offline: $membersCount[$guildID;offline]
+No molestar: $membersCount[$guildID;dnd]
+Baneados: $banCount
   ]
+  $footer[$userTag;$authorAvatar]
 $color[RANDOM]
-$thumbnain[$serverIcon[$guildID]]`
+$thumbnail[$serverIcon]
+ `
 })

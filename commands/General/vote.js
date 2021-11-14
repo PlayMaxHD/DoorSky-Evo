@@ -3,9 +3,9 @@ name: "vote",
 description: "Vota a DoorSky Para que crezca!!",
 usage: "dr!vote",
 note: "El bot esta en muchas botlist pero solo mostramos en las que se pueda votar",
-code: `$title[Vota Por mi 💚]
+code: `$title[$replaceText[$replaceText[$getServerVar[language];Español;Vota Por mi];Inglés;Vote For Me] 💚]
 $description[
-Estas son los lugares donde puedes votar por DoorSky Evolution
+$replaceText[$replaceText[$getServerVar[language];Español;Estas son los lugares donde puedes votar por DoorSky Evolution];Inglés;These are the places where you can vote for DoorSky Evolution]
 
 ** Top.gg**
 \`\`\`Proximamente\`\`\`
@@ -17,5 +17,5 @@ Estas son los lugares donde puedes votar por DoorSky Evolution
 \`\`\`Proximamente\`\`\`
 ]
 $color[GREEN]
-$footer[Gracias $userTag]`
+$footer[$replaceText[$replaceText[$getServerVar[language];Español;Gracias];Inglés;Thanks] $userTag]`
 })

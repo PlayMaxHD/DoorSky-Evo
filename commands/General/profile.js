@@ -9,28 +9,32 @@ $description[$replaceText[$replaceText[$getServerVar[language];Inglés;
 📆 Age: $getGlobalUserVar[edad]
 ♂️ Gender: $getGlobalUserVar[sexo]
 
-$addField[Family;
+**Backpack:**
+💵 Dinero: $getGlobalUserVar[money]
+💰 Bank: $getGlobalUserVar[bank]
+🎒 Items: $getGlobalUserVar[items]
+
+**Family:**
 🤵 Marriage: $getGlobalUserVar[marry]
 🐈 Pets: $getGlobalUserVar[pets]
 🧒 Children: $getGlobalUserVar[hijo]]
 
-$addField[Backpack;💵 Dinero: $getGlobalUserVar[money]
-💰 Bank: $getGlobalUserVar[bank]
-🎒 Items: $getGlobalUserVar[items]
-]];Español;
+];Español;
 🥇 Nivel: $getUserVar[level]
 📆 Edad: $getGlobalUserVar[edad]
 ♂️ Genero: $getGlobalUserVar[sexo]
 
-$addField[Familia;
+**Mochila:**
+💵 Dinero: $getGlobalUserVar[money]
+💰 Banco: $getGlobalUserVar[bank]
+🎒 Items: $getGlobalUserVar[items]
+
+**Familia:**
 🤵 Matrimonio: $getGlobalUserVar[marry]
 🐈 Mascota: $getGlobalUserVar[pets]
 🧒 Hijos: $getGlobalUserVar[hijo]]
 
-$addField[Mochila;💵 Dinero: $getGlobalUserVar[money]
-💰 Banco: $getGlobalUserVar[bank]
-🎒 Items: $getGlobalUserVar[items]
-]]]
+]]
 $color[RANDOM]
 $thumbnail[$authorAvatar]
 $footer[$replaceText[$replaceText[$getServerVar[language];Español;Economia 💸];Inglés;Economy 💸]]

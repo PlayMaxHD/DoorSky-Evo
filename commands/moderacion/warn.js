@@ -10,7 +10,8 @@ $description[:0 **$username** acaba de advertir a **$username[$mentioned[1]]**!!
 **Razon:**
 $messageSlice[1]]
 $color[RED]
-$onlyIf[$mentioned[1]==$clientID;:x: No Puedes Advertirme a mi >:0]
+$onlyIf[$mentioned[1]!=$clientID;:x: No Puedes Advertirme a mi >:0]
 $onlyIf[$mentioned[1]!=;:x: Menciona a alguien]
-$onlyPerms[;:x: No eres un moderador!!]`
+$onlyPerms[admin;:x: No eres un moderador!!]
+`
 })

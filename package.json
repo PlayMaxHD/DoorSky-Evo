@@ -10,10 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dbd.db": "^1.2.6",
-    "dbd.js": "^2.1.1",
+    "aoi.js": "^4.4.0",
+    "dbd.js": "^3.0.7",
     "discord-memes": "^1.2.6",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "espchatbotapi": "^1.4.2",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
   }
 }

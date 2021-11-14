@@ -5,6 +5,6 @@ usage: "dr!confused",
 note: "O.o Confusa esta información",
 code: `$title[Confuso... O.o]
 $description[**$username** esta muy confundido...]
-$image[$jsonRequest[https://api.willz.repl.co/anime/confuse;message]]
+$image[$httpRequest[https://api.avux.ga/confused;GET;;message;error;X-API-Key:nPj9dETq8z1LZRUCjD]]
 $color[RANDOM]`
 })
