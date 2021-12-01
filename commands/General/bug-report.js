@@ -12,5 +12,5 @@ $footer[$authorID;$authorAvatar]
 $color[RANDOM]
 $useChannel[835613383277150238]
 $channelSendMessage[$channelID;Bug Enviado!!]
-$onlyIf[$message[10]!=;tu sugerencia debe tener 10 carácteres!!]`
+$onlyIf[$message[10]!=;tu reporte debe tener 10 carácteres!!]`
 })
