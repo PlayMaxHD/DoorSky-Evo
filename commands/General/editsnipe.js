@@ -7,7 +7,7 @@ note: "",
 $description[$getChannelVar[esnipeOldMsg]]
 $addTimestamp
 $color[RANDOM]
-$onlyIf[$getChannelVar[esnipeOldMsg]!=undefinied;{description: there is nothing i can snipe}{color: RED}]
-$onlyIf[$getChannelVar[msgEditorID]!=undefinied;{description: there is nothing i can snipe}{color: RED}]
-$suppressErrors[There is nothing i can snipe]`
+$onlyIf[$getChannelVar[esnipeOldMsg]!=undefinied;$replaceText[$replaceText[$getServerVar[language];Español;{description: no hay nada que pueda disparar} {color:RED}];Inglés;{description: there is nothing i can snipe}{color: RED}]]
+$onlyIf[$getChannelVar[msgEditorID]!=undefinied:$replaceText[$replaceText[$getServerVar[language];Español;{description: no hay nada que pueda disparar} {color:RED}];Inglés;{description: there is nothing i can snipe}{color: RED}]]
+$suppressErrors[$replaceText[$replaceText[$getServerVar[language];Español;No hay nada que pueda recuperar];Inglés;There is nothing i can snipe]]`
 })

@@ -15,7 +15,7 @@ app.listen(3000,() => {
 const bot = new aoijs.Bot({
 	sharding: true,
 	shardAmount: 2,
-	token: "Nzk1NDgzNDA2NDI2MTc3NTQ3.X_KBpw.-3YUeBxxR1Tv4mhNm1Ur-wPEMDM",
+	token: "Nzk1NDgzNDA2NDI2MTc3NTQ3.X_KBpw.A3_Q8HPvzPfLAiJ4pw5-tw-ZymM",
 	prefix: [
 		'$getServerVar[prefix]',
 		'<@795483406426177547>',

@@ -8,5 +8,5 @@ $description[$getChannelVar[Message_Snipe;$mentionedChannels[1;yes]]]
 $footer[#$channelName[$mentionedChannels[1;yes]]]
 $color[$userRoleColor[$getChannelVar[Author_Snipe;$mentionedChannels[1;yes]]]]
 $addTimestamp
-$onlyIf[$getChannelVar[Message_Snipe;$mentionedChannels[1;yes]]!=;> **❌ There's nothing to snipe.**]`
+$onlyIf[$getChannelVar[Message_Snipe;$mentionedChannels[1;yes]]!=;> **❌ $replaceText[$replaceText[$getServerVar[language];Español;No hay nada que snipear.];Inglés;There's nothing to snipe.]**]`
 })
